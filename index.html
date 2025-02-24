@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="https://assets3.smartfit.com.br/assets/new-home-v4-assets/logo-dark.svg" width="150"
+                    alt="Smart Fit">
+            </a>
+
+            <!-- Botão do menu mobile -->
+            <button type="button" class="btn " data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDireita">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Itens da navbar -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Academias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Espaço do Cliente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Seja um franqueado</a>
+                    </li>
+                    <li class="nav-item">
+                        <button style="border-radius: 18px;" type="button" class="btn btn-warning">Buscar
+                            Academia</button>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <button type="button" class="btn ">
+                            <i class="bi bi-list fs-4"></i>
+                        </button> -->
+                        <button type="button" class="btn " data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasDireita">
+                            <i class="bi bi-list fs-4"></i>
+                        </button>
+                    </li>
+                </ul>
+                <!-- Offcanvas (Modal Lateral) -->
+            </div>
+        </div>
+    </nav>
+    <!-- MODAL  -->
+    <div style="border-top-left-radius: 30px; border-bottom-left-radius: 30px;  " class="offcanvas offcanvas-end"
+        tabindex="-1" id="offcanvasDireita" aria-labelledby="offcanvasDireitaLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <img src="https://assets3.smartfit.com.br/assets/new-home-v4-assets/logo-dark.svg" width="150"
+                alt="Smart Fit">
+
+            <div class="mt-2">
+                <ul class="navbar-nav align-items-start gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#" style="color: black;"
+                            onmouseover="this.style.color='yellow'" onmouseout="this.style.color='black'">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#" style="color: black;"
+                            onmouseover="this.style.color='yellow'" onmouseout="this.style.color='black'"
+                            href="#">Academias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#" style="color: black;"
+                            onmouseover="this.style.color='yellow'" onmouseout="this.style.color='black'" href="#">Seja
+                            um franqueado</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#" style="color: black;"
+                            onmouseover="this.style.color='yellow'" onmouseout="this.style.color='black'" href="#">Smart
+                            Fit News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#" style="color: black;"
+                            onmouseover="this.style.color='yellow'" onmouseout="this.style.color='black'"
+                            href="#">Planos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#" style="color: black;"
+                            onmouseover="this.style.color='yellow'" onmouseout="this.style.color='black'" href="#">
+                            Smart Fit Supps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#" style="color: black;"
+                            onmouseover="this.style.color='yellow'" onmouseout="this.style.color='black'"
+                            href="#">Sustentabilidade</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#" style="color: black;"
+                            onmouseover="this.style.color='yellow'" onmouseout="this.style.color='black'" href="#">
+                            Nossa História</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#" style="color: black;"
+                            onmouseover="this.style.color='yellow'" onmouseout="this.style.color='black'"
+                            href="#">Espaço do cliente</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- <button class="btn btn-secondary" data-bs-dismiss="offcanvas">Fechar</button> -->
+    </div>
+
+    <div class="container mt-4">
+        <div class="col-12">
+            <img style="border-radius: 20px;" class="w-100 d-none d-sm-block"
+                src="https://www.smartfit.com.br/news/wp-content/uploads/2025/02/banner-KV1_1920x850_Desktop-1.jpg"
+                alt="">
+
+            <img style="border-radius: 20px;" class="w-100 d-block d-sm-none"
+                src="https://www.smartfit.com.br/news/wp-content/uploads/2025/02/banner-KV1_1080x1789_mobile-1.jpg"
+                alt="">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-12 d-flex mt-4 mb-4 align-items-center justify-content-center">
+            <h2>Encontre a academia mais próxima!</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- SEARCH DE ENCONTRAR SUA ACADEMIA  -->
+        <div class="col-12 background-image">
+            <div>
+                <!-- BUTTON DA TELA GRANDE  -->
+                <button class="search-button d-none d-sm-block d-flex justify-content-between" type="button">
+                    Encontre sua Academia
+                    <i class="bi bi-search fs-4"></i>
+                </button>
+                <!-- BUTTON SEARCH DA TELA DE CELULAR  -->
+                <button  style="width: 290px;" class="search-button  d-flex d-block d-sm-none justify-content-between" type="button">
+                    Encontre sua Academia
+                    <i class="bi bi-search fs-4"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4 mb- 4">
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <h2>Venha treinar na maior rede de academias da América Latina</h2>
+        </div>
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <h6>Os melhores equipamentos e infraestrutura com mensalidades acessíveis.</h6>
+        </div>
+    </div>
+
+    <!-- CARD  PREÇOS -->
+    <div class="container mt-4 mb-4">
+        <div class="col-12 d-flex align-items-center justify-content-center gap-3">
+            <!-- CARD 1 TELA GRANDE  -->
+            <div class="card d-none d-sm-block  text-white p-1"
+                style="width: 20rem; border-radius: 20px; background-color: #3b3b40;">
+                <div class="card-body d-flex flex-column justify-content-start">
+                    <h5 class="card-title">Plano Black</h5>
+                    <p class="card-text fs-6">Treine em qualquer academia da Smart Fit, seja no Brasil ou na América
+                        Latina.
+                        São +1.700 unidades em 15 países!
+                    </p>
+                    <p>A PARTIR DE </p>
+                    <h1>R$ 0,00*</h1>
+                    <p>no 1º mês, depois R$ 149,90</p>
+                    <p>12 meses de fidelidade</p>
+                    <a href="#" style="width: 250px; border-radius: 15px;" class="btn btn-warning">Contratar agora</a>
+
+                    <ul class="list-unstyled mt-3 text-start ps-2">
+                        <li class="d-flex align-items-center">
+                            <i style="color: rgb(21, 207, 21);" class="bi bi-check-circle-fill me-2"></i> Leve 5 amigos
+                            por mês para treinar com você
+                        </li>
+                        <li class="d-flex align-items-center mt-2">
+                            <i style="color: rgb(21, 207, 21);" class="bi bi-check-circle-fill me-2"></i> Cadeira de
+                            massagem
+                        </li>
+                        <li class="d-flex align-items-center mt-2">
+                            <i style="color: rgb(21, 207, 21);" class="bi bi-check-circle-fill me-2"></i> Smart Fit
+                            GO(treinos online) no app
+                        </li>
+                        <li class="d-flex align-items-center mt-2">
+                            <i style="color: rgb(21, 207, 21);" class="bi bi-check-circle-fill me-2"></i> Área de
+                            musculação e aeróbicos
+                        </li>
+                        <li class="d-flex align-items-center mt-2">
+                            <i style="color: rgb(21, 207, 21);" class="bi bi-check-circle-fill me-2"></i> Smart Fit App
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CARD 2 TELA GRANDE  -->
+            <div class="card  d-none d-sm-block  p-1" style="width: 20rem; border-radius: 20px; ">
+                <div class="card-body d-flex flex-column justify-content-start">
+                    <h5 class="card-title">Plano Fit</h5>
+                    <p class="card-text fs-6">Treine em qualquer academia da Smart Fit, seja no Brasil ou na América
+                        Latina.
+                        São +1.700 unidades em 15 países!
+                    </p>
+                    <p>A PARTIR DE </p>
+                    <h1>R$ 0,00*</h1>
+                    <p>no 1º mês, depois R$ 149,90</p>
+                    <p>12 meses de fidelidade</p>
+                    <a href="#" style="width: 250px; border-radius: 15px;" class="btn btn-warning">Contratar agora</a>
+
+                    <ul class="list-unstyled mt-3 text-start ps-2">
+                        <li class="d-flex align-items-center">
+                            <i class="bi bi-ban me-2"></i> <s><b>Acesso ilimitado a +1700 academias</b></s>
+                        </li>
+                        <li class="d-flex align-items-center mt-2">
+                            <i class="bi bi-ban me-2"></i> <s><b>Cadeira de
+                                    massagem</b></s>
+                        </li>
+                        <li class="d-flex align-items-center mt-2">
+                            <i style="color: rgb(21, 207, 21);" class="bi bi-check-circle-fill me-2"></i> Smart Fit
+                            GO(treinos online) no app
+                        </li>
+                        <li class="d-flex align-items-center mt-2">
+                            <i style="color: rgb(21, 207, 21);" class="bi bi-check-circle-fill me-2"></i> Área de
+                            musculação e aeróbicos
+                        </li>
+                        <li class="d-flex align-items-center mt-2">
+                            <i style="color: rgb(21, 207, 21);" class="bi bi-check-circle-fill me-2"></i> Smart Fit App
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CARD 3 TELA GRANDE  -->
+            <div class="card d-none d-sm-block   p-1" style="width: 20rem; border-radius: 20px; ">
+                <div class="card-body d-flex flex-column justify-content-start">
+                    <h5 class="card-title">Plano Fit</h5>
+                    <p class="card-text fs-6">Treine em qualquer academia da Smart Fit, seja no Brasil ou na América
+                        Latina.
+                        São +1.700 unidades em 15 países!
+                    </p>
+                    <p>A PARTIR DE </p>
+                    <h1>R$ 119,90*</h1>
+                    <p>no 1º mês, depois R$ 149,90</p>
+                    <p>12 meses de fidelidade</p>
+                    <a href="#" style="width: 250px; border-radius: 15px;" class="btn btn-warning">Contratar agora</a>
+
+                    <ul class="list-unstyled mt-3 text-start ps-2">
+                        <li class="d-flex align-items-center">
+                            <i class="bi bi-ban me-2"></i> <s><b>Acesso ilimitado a +1700 academias</b></s>
+                        </li>
+                        <li class="d-flex align-items-center mt-2">
+                            <i class="bi bi-ban me-2"></i> <s><b>Cadeira de
+                                    massagem</b></s>
+                        </li>
+                        <li class="d-flex align-items-center mt-2">
+                            <i style="color: rgb(21, 207, 21);" class="bi bi-check-circle-fill me-2"></i> Smart Fit
+                            GO(treinos online) no app
+                        </li>
+                        <li class="d-flex align-items-center mt-2">
+                            <i style="color: rgb(21, 207, 21);" class="bi bi-check-circle-fill me-2"></i> Área de
+                            musculação e aeróbicos
+                        </li>
+                        <li class="d-flex align-items-center mt-2">
+                            <i style="color: rgb(21, 207, 21);" class="bi bi-check-circle-fill me-2"></i> Smart Fit App
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CARROUSEL PRICES TELA  DE CELULAR   -->
+            <div id="carouselExampleControlsNoTouching" class="carousel slide d-block d-sm-none" data-bs-touch="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card text-white p-1"
+                            style="width: 20rem; border-radius: 20px; background-color: #3b3b40;">
+                            <div class="card-body d-flex flex-column justify-content-start">
+                                <h5 class="card-title">Plano Black</h5>
+                                <p class="card-text fs-6">Treine em qualquer academia da Smart Fit, seja no Brasil ou na
+                                    América Latina. São +1.700 unidades em 15 países!</p>
+                                <p>A PARTIR DE </p>
+                                <h1>R$ 0,00*</h1>
+                                <p>no 1º mês, depois R$ 149,90</p>
+                                <p>12 meses de fidelidade</p>
+                                <a href="#" style="width: 250px; border-radius: 15px;" class="btn btn-warning">Contratar
+                                    agora</a>
+                                <ul class="list-unstyled mt-3 text-start ps-2">
+                                    <li class="d-flex align-items-center"><i style="color: rgb(21, 207, 21);"
+                                            class="bi bi-check-circle-fill me-2"></i> Leve 5 amigos por mês para treinar
+                                        com você</li>
+                                    <li class="d-flex align-items-center mt-2"><i style="color: rgb(21, 207, 21);"
+                                            class="bi bi-check-circle-fill me-2"></i> Cadeira de massagem</li>
+                                    <li class="d-flex align-items-center mt-2"><i style="color: rgb(21, 207, 21);"
+                                            class="bi bi-check-circle-fill me-2"></i> Smart Fit GO (treinos online) no
+                                        app</li>
+                                    <li class="d-flex align-items-center mt-2"><i style="color: rgb(21, 207, 21);"
+                                            class="bi bi-check-circle-fill me-2"></i> Área de musculação e aeróbicos
+                                    </li>
+                                    <li class="d-flex align-items-center mt-2"><i style="color: rgb(21, 207, 21);"
+                                            class="bi bi-check-circle-fill me-2"></i> Smart Fit App</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card p-1" style="width: 20rem; border-radius: 20px;">
+                            <div class="card-body d-flex flex-column justify-content-start">
+                                <h5 class="card-title">Plano Fit</h5>
+                                <p class="card-text fs-6">Treine em qualquer academia da Smart Fit, seja no Brasil ou na
+                                    América Latina. São +1.700 unidades em 15 países!</p>
+                                <p>A PARTIR DE </p>
+                                <h1>R$ 0,00*</h1>
+                                <p>no 1º mês, depois R$ 149,90</p>
+                                <p>12 meses de fidelidade</p>
+                                <a href="#" style="width: 250px; border-radius: 15px;" class="btn btn-warning">Contratar
+                                    agora</a>
+                                <ul class="list-unstyled mt-3 text-start ps-2">
+                                    <li class="d-flex align-items-center"><i class="bi bi-ban me-2"></i> <s><b>Acesso
+                                                ilimitado a +1700 academias</b></s></li>
+                                    <li class="d-flex align-items-center mt-2"><i class="bi bi-ban me-2"></i>
+                                        <s><b>Cadeira de massagem</b></s>
+                                    </li>
+                                    <li class="d-flex align-items-center mt-2"><i style="color: rgb(21, 207, 21);"
+                                            class="bi bi-check-circle-fill me-2"></i> Smart Fit GO (treinos online) no
+                                        app</li>
+                                    <li class="d-flex align-items-center mt-2"><i style="color: rgb(21, 207, 21);"
+                                            class="bi bi-check-circle-fill me-2"></i> Área de musculação e aeróbicos
+                                    </li>
+                                    <li class="d-flex align-items-center mt-2"><i style="color: rgb(21, 207, 21);"
+                                            class="bi bi-check-circle-fill me-2"></i> Smart Fit App</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card p-1" style="width: 20rem; border-radius: 20px;">
+                            <div class="card-body d-flex flex-column justify-content-start">
+                                <h5 class="card-title">Plano Fit</h5>
+                                <p class="card-text fs-6">Treine em qualquer academia da Smart Fit, seja no Brasil ou na
+                                    América Latina. São +1.700 unidades em 15 países!</p>
+                                <p>A PARTIR DE </p>
+                                <h1>R$ 119,90*</h1>
+                                <p>no 1º mês, depois R$ 149,90</p>
+                                <p>12 meses de fidelidade</p>
+                                <a href="#" style="width: 250px; border-radius: 15px;" class="btn btn-warning">Contratar
+                                    agora</a>
+                                <ul class="list-unstyled mt-3 text-start ps-2">
+                                    <li class="d-flex align-items-center"><i class="bi bi-ban me-2"></i> <s><b>Acesso
+                                                ilimitado a +1700 academias</b></s></li>
+                                    <li class="d-flex align-items-center mt-2"><i class="bi bi-ban me-2"></i>
+                                        <s><b>Cadeira de massagem</b></s>
+                                    </li>
+                                    <li class="d-flex align-items-center mt-2"><i style="color: rgb(21, 207, 21);"
+                                            class="bi bi-check-circle-fill me-2"></i> Smart Fit GO (treinos online) no
+                                        app</li>
+                                    <li class="d-flex align-items-center mt-2"><i style="color: rgb(21, 207, 21);"
+                                            class="bi bi-check-circle-fill me-2"></i> Área de musculação e aeróbicos
+                                    </li>
+                                    <li class="d-flex align-items-center mt-2"><i style="color: rgb(21, 207, 21);"
+                                            class="bi bi-check-circle-fill me-2"></i> Smart Fit App</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mt-4 mb-4">
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <h6>Os preços, taxas e condições promocionais podem variar de acordo com a academia escolhida.</h6>
+        </div>
+
+        <div class="col-12 mt-5  d-flex align-items-center justify-content-center">
+            <h1>Experiência <span style="color: rgb(234, 180, 19);">Smart Fit</span></h1>
+        </div>
+    </div>
+    <!-- TELA GRANDE  -->
+    <div class="container d-none d-sm-block  mt-4 mb-4">
+        <div class="col-12 d-flex align-items-center justify-content-center gap-3">
+            <!-- CARD 1 FITDANCE  -->
+            <div class="card d-flex flex-column"
+                style=" width: 19rem; height: 30rem; border-radius: 15px; overflow: hidden;">
+                <img style="border-top-left-radius: 15px; border-top-right-radius: 15px;  object-fit: cover; height: 35%;"
+                    src="https://assets3.smartfit.com.br/assets/new-home-v4-assets/aulas/fitdance-cover.webp"
+                    class="card-img-top" alt="...">
+                <div class="d-grid">
+                    <button class="btn btn-warning text-center" type="button"><b>FITDANCE</b></button>
+                </div>
+                <div class="card-body d-flex justify-content-around text-center p-2">
+                    <div>
+                        <p class="card-text d-flex align-items-center flex-column">
+                            <i class="bi bi-clock text-warning fs-4"></i>
+                            <b>Duração</b>
+                            <small>45/60</small>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="card-text d-flex align-items-center flex-column">
+                            <i class="bi bi-battery-charging text-warning fs-4"></i>
+                            <b>Intensidade</b>
+                            <small>Alta</small>
+                        </p>
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="card-body d-flex flex-column align-items-center p-2"
+                    style="flex-grow: 1; overflow-y: auto;">
+                    <p class="text-start" style="font-size: 0.9rem; line-height: 1.2;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos doloribus in beatae quasi
+                        quos enim corrupti, molestiae, esse autem explicabo minus ipsam, error ipsa ut eius.
+                        Perspiciatis totam ad alias?
+                    </p>
+                    <a href="#" class="btn btn-link btn-sm mt-auto">Saiba mais</a>
+                </div>
+            </div>
+            <!-- CARD 2 SMARTH CROSS  -->
+            <div class="card d-flex flex-column"
+                style=" width: 19rem; height: 30rem; border-radius: 15px; overflow: hidden;">
+                <img style="border-top-left-radius: 15px; border-top-right-radius: 15px;  object-fit: cover; height: 35%;"
+                    src="https://assets3.smartfit.com.br/assets/new-home-v4-assets/aulas/smart-cross-cover.webp"
+                    class="card-img-top" alt="...">
+                <div class="d-grid">
+                    <button class="btn btn-warning text-center" type="button"><b>SMART CROSS</b></button>
+                </div>
+                <div class="card-body d-flex justify-content-around text-center p-2">
+                    <div>
+                        <p class="card-text d-flex align-items-center flex-column">
+                            <i class="bi bi-clock text-warning fs-4"></i>
+                            <b>Duração</b>
+                            <small>30</small>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="card-text d-flex align-items-center flex-column">
+                            <i class="bi bi-battery-charging text-warning fs-4"></i>
+                            <b>Intensidade</b>
+                            <small>Alta</small>
+                        </p>
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="card-body d-flex flex-column align-items-center p-2"
+                    style="flex-grow: 1; overflow-y: auto;">
+                    <p class="text-start" style="font-size: 0.9rem; line-height: 1.2;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos doloribus in beatae quasi
+                        quos enim corrupti, molestiae, esse autem explicabo minus ipsam, error ipsa ut eius.
+                        Perspiciatis totam ad alias?
+                    </p>
+                    <a href="#" class="btn btn-link btn-sm mt-auto">Saiba mais</a>
+                </div>
+            </div>
+            <!-- CARD 3  -->
+            <div class="card d-flex flex-column"
+                style=" width: 19rem; height: 30rem; border-radius: 15px; overflow: hidden;">
+                <img style="border-top-left-radius: 15px; border-top-right-radius: 15px;  object-fit: cover; height: 35%;"
+                    src="https://assets3.smartfit.com.br/assets/new-home-v4-assets/aulas/body-combat-cover.webp"
+                    class="card-img-top" alt="...">
+                <div class="d-grid">
+                    <button class="btn btn-warning text-center" type="button"><b>BODY COMBAT</b></button>
+                </div>
+                <div class="card-body d-flex justify-content-around text-center p-2">
+                    <div>
+                        <p class="card-text d-flex align-items-center flex-column">
+                            <i class="bi bi-clock text-warning fs-4"></i>
+                            <b>Duração</b>
+                            <small>30/45</small>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="card-text d-flex align-items-center flex-column">
+                            <i class="bi bi-battery-charging text-warning fs-4"></i>
+                            <b>Intensidade</b>
+                            <small>Alta</small>
+                        </p>
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="card-body d-flex flex-column align-items-center p-2"
+                    style="flex-grow: 1; overflow-y: auto;">
+                    <p class="text-start" style="font-size: 0.9rem; line-height: 1.2;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos doloribus in beatae quasi
+                        quos enim corrupti, molestiae, esse autem explicabo minus ipsam, error ipsa ut eius.
+                        Perspiciatis totam ad alias?
+                    </p>
+                    <a href="#" class="btn btn-link btn-sm mt-auto">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TELA PEQUENA  -->
+    <!-- CARROUSEL PRICES TELA  DE CELULAR   -->
+    <div class="container d-flex justify-content-center">
+        <div id="carouselExampleControlsNoTouching2" class="carousel  slide d-block d-sm-none" data-bs-touch="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- CARD 1 FITDANCE  -->
+                    <div class="card d-flex flex-column"
+                        style=" width: 19rem;  border-radius: 15px; min-height: 30rem; overflow: visible;">
+                        <img style="border-top-left-radius: 15px; border-top-right-radius: 15px;  object-fit: cover; height: 35%;"
+                            src="https://assets3.smartfit.com.br/assets/new-home-v4-assets/aulas/fitdance-cover.webp"
+                            class="card-img-top" alt="...">
+                        <div class="d-grid">
+                            <button class="btn btn-warning text-center" type="button"><b>FITDANCE</b></button>
+                        </div>
+                        <div class="card-body d-flex justify-content-around text-center p-2">
+                            <div>
+                                <p class="card-text d-flex align-items-center flex-column">
+                                    <i class="bi bi-clock text-warning fs-4"></i>
+                                    <b>Duração</b>
+                                    <small>45/60</small>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="card-text d-flex align-items-center flex-column">
+                                    <i class="bi bi-battery-charging text-warning fs-4"></i>
+                                    <b>Intensidade</b>
+                                    <small>Alta</small>
+                                </p>
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-center p-2"
+                            style="flex-grow: 1; overflow-y: auto;">
+                            <p class="text-start" style="font-size: 0.9rem; line-height: 1.2;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos doloribus in beatae
+                                quasi
+                                quos enim corrupti, molestiae, esse autem explicabo minus ipsam, error ipsa ut eius.
+                                Perspiciatis totam ad alias?
+                            </p>
+                            <a href="#" class="btn btn-link btn-sm mt-auto">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- CARD 2 SMARTH CROSS  -->
+                    <div class="card d-flex flex-column"
+                        style="  width: 19rem;  border-radius: 15px; min-height: 30rem; overflow: visible;">
+                        <img style="border-top-left-radius: 15px; border-top-right-radius: 15px;  object-fit: cover; height: 35%;"
+                            src="https://assets3.smartfit.com.br/assets/new-home-v4-assets/aulas/smart-cross-cover.webp"
+                            class="card-img-top" alt="...">
+                        <div class="d-grid">
+                            <button class="btn btn-warning text-center" type="button"><b>SMART CROSS</b></button>
+                        </div>
+                        <div class="card-body d-flex justify-content-around text-center p-2">
+                            <div>
+                                <p class="card-text d-flex align-items-center flex-column">
+                                    <i class="bi bi-clock text-warning fs-4"></i>
+                                    <b>Duração</b>
+                                    <small>30</small>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="card-text d-flex align-items-center flex-column">
+                                    <i class="bi bi-battery-charging text-warning fs-4"></i>
+                                    <b>Intensidade</b>
+                                    <small>Alta</small>
+                                </p>
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-center p-2"
+                            style="flex-grow: 1; overflow-y: auto;">
+                            <p class="text-start" style="font-size: 0.9rem; line-height: 1.2;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos doloribus in beatae
+                                quasi
+                                quos enim corrupti, molestiae, esse autem explicabo minus ipsam, error ipsa ut eius.
+                                Perspiciatis totam ad alias?
+                            </p>
+                            <a href="#" class="btn btn-link btn-sm mt-auto">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 3  -->
+                <div class="carousel-item">
+                    <!-- CARD 3  -->
+                    <div class="card d-flex flex-column"
+                        style="  width: 19rem;  border-radius: 15px; min-height: 30rem; overflow: visible;">
+                        <img style="border-top-left-radius: 15px; border-top-right-radius: 15px;  object-fit: cover; height: 35%;"
+                            src="https://assets3.smartfit.com.br/assets/new-home-v4-assets/aulas/body-combat-cover.webp"
+                            class="card-img-top" alt="...">
+                        <div class="d-grid">
+                            <button class="btn btn-warning text-center" type="button"><b>BODY COMBAT</b></button>
+                        </div>
+                        <div class="card-body d-flex justify-content-around text-center p-2">
+                            <div>
+                                <p class="card-text d-flex align-items-center flex-column">
+                                    <i class="bi bi-clock text-warning fs-4"></i>
+                                    <b>Duração</b>
+                                    <small>30/45</small>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="card-text d-flex align-items-center flex-column">
+                                    <i class="bi bi-battery-charging text-warning fs-4"></i>
+                                    <b>Intensidade</b>
+                                    <small>Alta</small>
+                                </p>
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-center p-2"
+                            style="flex-grow: 1; overflow-y: auto;">
+                            <p class="text-start" style="font-size: 0.9rem; line-height: 1.2;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos doloribus in beatae
+                                quasi
+                                quos enim corrupti, molestiae, esse autem explicabo minus ipsam, error ipsa ut eius.
+                                Perspiciatis totam ad alias?
+                            </p>
+                            <a href="#" class="btn btn-link btn-sm mt-auto">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev btn-primary" type="button"
+                data-bs-target="#carouselExampleControlsNoTouching2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching2"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+    </div>
+
+    <footer class="bg-black text-white pt-4 pb-2 mt-5">
+        <div class="container text-center">
+            <div>
+                <img src="https://smart-site-assets-prd-0.s3.amazonaws.com/assets/new-home-v4-assets/logo-white.svg"
+                    alt="Smart Fit">
+            </div>
+            <div class="d-flex justify-content-center gap-2 mb-3">
+                <a href="#" class="text-white"><i class="bi bi-facebook fs-4"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-instagram fs-4"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-youtube fs-4"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-spotify fs-4"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-twitter fs-4"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-messenger fs-4"></i></a>
+            </div>
+            <hr class="border-secondary">
+            <div class="row text-start">
+                <div class="col-12 col-md-4 mb-3">
+                    <h5>Institucional</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Sobre</a></li>
+                        <li><a href="#" class="text-white">Conceito</a></li>
+                        <li><a href="#" class="text-white">Investidores</a></li>
+                        <li><a href="#" class="text-white">Central de Ajuda</a></li>
+                        <li><a href="#" class="text-white">Fale Conosco</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <h5>Planos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Planos</a></li>
+                        <li><a href="#" class="text-white">Contratos</a></li>
+                        <li><a href="#" class="text-white">Planos Corporativos</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <h5>Corporativo</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Imprensa</a></li>
+                        <li><a href="#" class="text-white">Quero ser um franqueado</a></li>
+                        <li><a href="#" class="text-white">Divulgue sua marca</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <p class="text-center mb-0">&copy; 2024 Smart Fit. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>

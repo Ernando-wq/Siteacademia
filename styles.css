@@ -1,0 +1,128 @@
+.background-image {
+    background-image: url('https://assets.smartfit.com.br/images/new_home_br/hero-smartfit.jpeg');
+    /* Defina sua imagem */
+    background-size: cover;
+    /* Ajusta a imagem para cobrir toda a área */
+    background-position: center;
+    /* Centraliza a imagem */
+    height: 250px;
+    /* Altura da div */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    /* Cor do texto */
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.search-box {
+    background: rgba(255, 255, 255, 0.8);
+    /* Fundo branco semi-transparente */
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-box input {
+    border: none;
+    padding: 10px;
+    outline: none;
+    border-radius: 20px;
+}
+
+.search-box button {
+    border: none;
+    background: #ffc107;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.search-button {
+    width: 350px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: white;
+    /* Cor inicial do botão */
+    color: black;
+    /* Cor do texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* Espaçamento entre o texto e o ícone */
+    padding: 0 20px;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+    /* Efeito de transição */
+}
+
+.search-button i {
+    font-size: 18px;
+    /* Tamanho do ícone */
+}
+
+.search-button:hover {
+    background-color: #000;
+    /* Cor de fundo preta ao passar o mouse */
+    color: white;
+    /* Cor do texto e ícone branco */
+}
+
+.card {
+    transition: outline 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    outline: rgb(234, 180, 19);
+    box-shadow: 0px 6px 15px rgb(234, 180, 19);
+}
+
+footer {
+    min-height: auto;
+    /* Garante que ele cresça conforme o conteúdo */
+    overflow: visible;
+    /* Evita cortes de elementos internos */
+}
+
+html, body {
+    min-height: 100vh; /* Garante que a página tenha no mínimo a altura total da tela */
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Faz o conteúdo principal crescer e empurrar o footer para baixo */
+}
+
+footer {
+    width: 100%;
+    margin-top: auto;
+}
+
+
+
+@media (max-width: 768px) {
+    .card {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .card h1 {
+        font-size: 1.8rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    .btn-warning {
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+}
